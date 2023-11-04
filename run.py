@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 
 
 # Create and store an instance of Flask class
@@ -10,7 +10,17 @@ app = Flask(__name__)
 @app.route("/")
 # When we navigate to route directory ("/"), flask triggers index() function
 def index():
-    return "Hello, world!"
+    return render_template("index.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 
 if __name__ == "__main__":
