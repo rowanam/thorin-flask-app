@@ -1,3 +1,13 @@
+# Thorin & Company Flask App
+
+## Workspace Set Up
+
+Install Flask
+
+- Run command: pip3 install Flask
+
+## CI Template Instructions
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
