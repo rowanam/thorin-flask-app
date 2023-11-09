@@ -8,6 +8,8 @@ Install Flask
 
 ## Attributions
 
+Site theme - [Clean Blog theme](https://github.com/StartBootstrap/startbootstrap-clean-blog) from [Start Bootstrap](https://startbootstrap.com/)
+
 Thorin and company header background image - by Art-Calavera at [deviantart](https://www.deviantart.com/art-calavera/art/The-Hobbit-Thorin-and-Company-341472935)
 
 About page text and images - [Lord of the Rings Wiki | Fandom](https://lotr.fandom.com/wiki/Thorin_and_Company)
@@ -18,7 +20,7 @@ About page text and images - [Lord of the Rings Wiki | Fandom](https://lotr.fand
 
 Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
