@@ -1,10 +1,13 @@
 import os
 import json
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
+if os.path.exists("env.py"):
+    import env
 
 
 # Create and store an instance of Flask class
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 # Add route decorator to created app
@@ -36,7 +39,8 @@ def about_member(member_name):
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        print(request.form)
+        flash("Thanks {}, we have received your message!".format(
+            request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 
@@ -49,5 +53,7 @@ if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
         port=int(os.environ.get("PORT", "5000")),
-        debug=True  # Change to debug=False before production deployment or submission!
+
+        # Change to debug=False before production deployment or submission!
+        debug=True
     )

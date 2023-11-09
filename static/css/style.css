@@ -2,3 +2,9 @@
 .col-md-5 img {
     width: 100%;
 }
+
+.flashes li {
+    list-style-type: none;
+    color: #71bd71;
+    text-align: center;
+}
