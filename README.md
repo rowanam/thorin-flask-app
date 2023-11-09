@@ -6,6 +6,12 @@ Install Flask
 
 - Run command: pip3 install Flask
 
+## Attributions
+
+Thorin and company header background image - by Art-Calavera at [deviantart](https://www.deviantart.com/art-calavera/art/The-Hobbit-Thorin-and-Company-341472935)
+
+About page text and images - [Lord of the Rings Wiki | Fandom](https://lotr.fandom.com/wiki/Thorin_and_Company)
+
 ## CI Template Instructions
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
