@@ -6,6 +6,53 @@ Install Flask
 
 - Run command: pip3 install Flask
 
+## Deployment to Heroku
+
+Two ways were tried with this project, one of which (using the Heroku CLI) will be described here. (The other method is deploying from GitHub, which is more straightforward.)
+
+### Install the Heroku toolbelt (Heroku CLI) and log in
+
+Check if Heroku is installed by running `heroku --version`
+
+- If not, run `npm install -g heroku`
+
+Log in by running `heroku login -i` and supplying email and password
+
+- If MFA is set up, you may need to log in with API Key instead of password. This can be found in your Heroku Account Settings
+
+Check that log in worked by running `heroku apps`, which will output a list your Heroku apps
+
+### Create and deploy Heroku app
+
+Create a Heroku app
+
+- Go to [Heroku dashboard](https://dashboard.heroku.com/apps)
+- Create a new app and give it a unique name
+
+Connect Git remote
+
+- In IDE terminal, run `git remote add <remote name> <remote git url>`
+  - Remote name - choose a name for the remote branch
+  - Remote git url - can be found in the settings tab of the Heroku app
+  - Example: `git remote add heroku https://git.heroku.com/<APP-NAME>.git`
+- Make sure all code is commited and pushed (`git push -u heroku main`)
+
+Add requirements.txt
+
+- To store the necessary Python dependencies, and also let Heroku know what the app language is
+- Run `pip3 freeze --local > requirements.txt`
+- (File 'requirements.txt' should appear in explorer)
+- Commit and push this change (`git push -u heroku main`)
+
+Add Procfile
+
+- To tell Heroku how to run the app
+- Run `echo web: python run.py > Procfile`
+- (File 'Procfile' should appear in explorer)
+- Commit and push this change (`git push -u heroku main`)
+
+App should now work when opened from Heroku
+
 ## Attributions
 
 Site theme - [Clean Blog theme](https://github.com/StartBootstrap/startbootstrap-clean-blog) from [Start Bootstrap](https://startbootstrap.com/)
